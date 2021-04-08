@@ -1,4 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.jackpocket.scratchoff">
-
-</manifest>
+<manifest package="com.jackpocket.scratchoff" />

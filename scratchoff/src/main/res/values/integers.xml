@@ -1,5 +1,8 @@
 <resources>
 
-    <integer name="scratch__threshold_percent">65</integer>
+    <integer name="scratch__threshold_completion_percent">65</integer>
+    <integer name="scratch__clear_animation_duration_ms">1000</integer>
+
+    <item name="scratch__clear_animation_tag" type="id" />
 
 </resources>

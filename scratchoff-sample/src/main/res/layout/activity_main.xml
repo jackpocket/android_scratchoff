@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/scratch_view_behind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#818B8D" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="REVEALED!"
+            android:textColor="#88FFFFFF"
+            android:textSize="20dip" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="16dp"
+            android:text="Reset"
+            android:textColor="#88FFFFFF"
+            android:textSize="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:onClick="resetActionClicked"/>
+
+    </RelativeLayout>
+
+    <com.jackpocket.scratchoff.views.ScratchableLinearLayout
+        android:id="@+id/scratch_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3C9ADF"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/ic_touch_indicator"
+            app:tint="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="24dp"
+            android:text="SCRATCH ME"
+            android:textColor="#FFFFFF"
+            android:textSize="20dip"
+            android:textStyle="bold"/>
+
+    </com.jackpocket.scratchoff.views.ScratchableLinearLayout>
+
+    <TextView
+        android:id="@+id/scratch_value_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Scratched 0%"
+        android:textColor="#FFFFFF"
+        android:textSize="12dip" />
+
+</RelativeLayout>

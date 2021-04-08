@@ -1,6 +1,8 @@
 <resources>
 
-    <bool name="scratch__clear_on_threshold_reached">true</bool>
-    <bool name="scratch__fade_on_clear">true</bool>
+    <bool name="scratch__clear_on_threshold_reached_enabled">true</bool>
+    <bool name="scratch__clear_animation_enabled">true</bool>
+
+    <bool name="scratch__state_restoration_enabled">true</bool>
 
 </resources>
